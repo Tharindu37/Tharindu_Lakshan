@@ -15,11 +15,6 @@ body{
     margin-top: 100px!important;
     display: flex!important;
     /*background-color: #EDF1FD;*/
-    border-bottom-left-radius: 20%;
-    border-bottom-right-radius: 35%;
-    border-top-left-radius: 5px;
-    border-top-right-radius: 5px;
-    overflow: hidden;
 }
 .home-wrap>div:first-child{
     display: flex;
@@ -51,6 +46,8 @@ body{
     height: 100vh;
     animation-name: image-wrap;
     animation-duration: 2s;
+    border-bottom-right-radius: 50%;
+    border-bottom-left-radius: 30%;
     /*-webkit-animation-name: MainImage;
     -webkit-animation-duration: 2s;*/
 }
