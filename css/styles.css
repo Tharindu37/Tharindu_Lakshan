@@ -1,0 +1,81 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&family=Rubik+Bubbles&family=Titillium+Web&display=swap');
+*{
+    font-family: 'Roboto', sans-serif;
+}
+body{
+    height: 10000px;
+}
+.navbar {
+    min-height: 80px;
+}
+.container{
+    /*border: 1px solid red;*/
+    margin-top: 100px!important;
+    display: flex!important;
+
+}
+.container>div:first-child{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.details-wrap{
+    /*border: 1px solid red;*/
+    padding-left: 60px;
+}
+.details-wrap>h2{
+    font-size: 40px;
+}
+.details-wrap>p{
+    font-size: 20px;
+}
+.details-wrap>button{
+    background-color: #D60D3D;
+    margin-top: 20px;
+    font-size: 15px;
+}
+.details-wrap>button:hover{
+    border: 1px solid #D60D3D;
+}
+.image-wrap{
+    /*border: 1px solid red;*/
+    background: url("../assets/img/profile-pic.png") no-repeat center;
+    width: 100%;
+    height: 100vh;
+    animation-name: image-wrap;
+    animation-duration: 2s;
+    /*-webkit-animation-name: MainImage;
+    -webkit-animation-duration: 2s;*/
+}
+@keyframes image-wrap {
+    from {
+        /*height: 100px;*/
+        opacity: 0;
+        /*top: 260px;*/
+    }
+
+    to {
+       /* height: 350px;*/
+        opacity: 1;
+        /*top: 160px;*/
+    }
+}
+@media only screen and (max-width: 600px) {
+    .image-wrap{
+        /*border: 1px solid red;*/
+        width: 100%;
+        height: 80vh;
+        display: flex;
+        background-size: cover;
+    }
+    .details-wrap{
+        /*border: 1px solid red;*/
+        padding-left: 0;
+    }
+    .details-wrap>h2{
+        font-size: 30px;
+    }
+    .details-wrap>p{
+        font-size: 16px;
+    }
+}
