@@ -2,18 +2,31 @@
 *{
     font-family: 'Roboto', sans-serif;
 }
+button{
+    height: 35px;
+    width: 120px;
+}
 body{
     background-color: #EDF1FD;
 }
 /*home page*/
 .navbar {
-    min-height: 80px;
+   /* min-height: 80px;*/
 }
 .home-wrap{
     /*border: 1px solid red;*/
     margin-top: 100px!important;
     display: flex!important;
     /*background-color: #EDF1FD;*/
+}
+@media only screen and (max-width: 600px) {
+    #home-one{
+        order: 2;
+        margin-top: 30px;
+    }
+    #home-two{
+        order: 1;
+    }
 }
 .home-wrap>div:first-child{
     display: flex;
@@ -101,11 +114,18 @@ body{
 }
 
 @media only screen and (max-width: 600px) {
+    .about-wrap{
+        margin-top: 50px!important;
+    }
     #about-one{
         order: 2;
     }
     #about-two{
+        margin-top: -60px;
         order: 1;
+    }
+    #about-two>div>h4{
+        margin-bottom: 10px!important;
     }
 }
 /*about page*/
@@ -114,9 +134,18 @@ body{
     background: url("../assets/img/education-image.png") no-repeat center;
     background-size: contain;
     width: 100%;
-    height: 400px;
+    height: 700px;
 }
 @media only screen and (max-width: 600px) {
+    .education-image-wrap{
+        height: 300px;
+    }
+    #education{
+        margin-top: 0!important;
+    }
+    #education>.row>div>h4{
+        margin-bottom: -20px!important;
+    }
     #education-one{
         order: 2;
     }
@@ -147,16 +176,27 @@ body{
     background: url("../assets/img/skills-image.jpg") no-repeat center;
     background-size: contain;
 }
+@media only screen and (max-width: 600px) {
+    .skills-image-wrap{
+        height: 250px;
+    }
+    .skills-wrap{
+        margin-top: 0!important;
+    }
+    #skills-one{
+        order: 2;
+    }
+    #skills-two{
+        order: 1;
+    }
+}
 /*skills*/
 
 /*project*/
-.project-outer-wrap{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    -webkit-box-shadow: 0px 0px 32px -23px #000000;
-    box-shadow: 0px 0px 32px -23px #000000;
-    padding: 20px;
+@media only screen and (max-width: 600px) {
+    .project-wrap{
+        margin-top: 0!important;
+    }
 }
 /*project*/
 
@@ -165,11 +205,27 @@ body{
     background: url("../assets/img/experience-image.png") no-repeat center;
     background-size: contain;
     width: 100%;
-    height: 400px;
+    height: 500px;
+}
+@media only screen and (max-width: 600px) {
+    .experience-wrap{
+        margin-top: 20px!important;
+    }
+    .experience-wrap>.row>div>h4{
+        margin-bottom: 10px!important;
+    }
+    .experience-image-wrap{
+        height: 300px;
+    }
 }
 /*experience*/
 
 /*knowledge sharing*/
+@media only screen and (max-width: 600px) {
+    .knowledge-wrap{
+        margin-top: 20px!important;
+    }
+}
 /* taking care of responsive layout */
 
 
@@ -184,13 +240,30 @@ figure iframe {
     width: 100%;
     height: 100%;
 }
+
 /*knowledge sharing*/
 
 /*blog*/
 .not-found-image-wrap{
-
     display: flex;
     align-items: center;
     justify-content: center;
 }
+@media only screen and (max-width: 600px) {
+    .blog-wrap{
+        margin-top: 20px!important;
+    }
+}
 /*blog*/
+
+/*footer*/
+@media only screen and (max-width: 600px) {
+    .details-wrap{
+        margin-bottom: 40px!important;
+    }
+    .contact-wrap{
+        margin-top: 30px;
+        margin-bottom: -60px;
+    }
+}
+/*footer*/
