@@ -22,6 +22,7 @@ body{
     margin-top: 100px!important;
     display: flex!important;
     /*background-color: #EDF1FD;*/
+
 }
 @media only screen and (max-width: 600px) {
     #home-one{
@@ -57,7 +58,7 @@ body{
 }
 .image-wrap{
     /*border: 1px solid red;*/
-    background: url("../assets/img/profile-pic.png") no-repeat center ;
+    background: url("../assets/img/profile-pic2.png") no-repeat center ;
     width: 100%;
     height: 100vh;
     animation-name: image-wrap;
@@ -115,7 +116,7 @@ body{
 
 @media only screen and (max-width: 600px) {
     .about-wrap{
-        margin-top: 50px!important;
+        padding-top: 50px!important;
     }
     #about-one{
         order: 2;
@@ -141,7 +142,7 @@ body{
         height: 300px;
     }
     #education{
-        margin-top: 0!important;
+        padding-top: 0!important;
     }
     #education>.row>div>h4{
         margin-bottom: -20px!important;
@@ -181,7 +182,7 @@ body{
         height: 250px;
     }
     .skills-wrap{
-        margin-top: 0!important;
+        padding-top: 0!important;
     }
     #skills-one{
         order: 2;
@@ -195,7 +196,7 @@ body{
 /*project*/
 @media only screen and (max-width: 600px) {
     .project-wrap{
-        margin-top: 0!important;
+        padding-top: 0!important;
     }
 }
 /*project*/
@@ -209,7 +210,7 @@ body{
 }
 @media only screen and (max-width: 600px) {
     .experience-wrap{
-        margin-top: 20px!important;
+        padding-top: 20px!important;
     }
     .experience-wrap>.row>div>h4{
         margin-bottom: 10px!important;
@@ -223,7 +224,7 @@ body{
 /*knowledge sharing*/
 @media only screen and (max-width: 600px) {
     .knowledge-wrap{
-        margin-top: 20px!important;
+        padding-top: 20px!important;
     }
 }
 /* taking care of responsive layout */
@@ -251,7 +252,7 @@ figure iframe {
 }
 @media only screen and (max-width: 600px) {
     .blog-wrap{
-        margin-top: 20px!important;
+        padding-top: 20px!important;
     }
 }
 /*blog*/
